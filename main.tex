@@ -45,9 +45,9 @@
 
 %%% Macros
 %%% ------------------------------------------
-\newcommand{\desctotoc}[4]{%
-  \addtocontents{toc}{\medskip\noindent\detokenize{#1}\leavevmode\par\medskip}
-}
+% \newcommand{\desctotoc}[4]{%
+%   \addtocontents{toc}{\medskip\noindent\detokenize{#1}\leavevmode\par\medskip}
+% }
 
 
 \begin{document}
@@ -55,7 +55,7 @@
 
 %%% Titlepage
 %%% ------------------------------------------
-\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt] at (7.6,-13.2){\includegraphics[width=\paperwidth]{Graph-Theory-768x481.jpg}};
+\tikz[overlay] \node[opacity=1,inner sep=0pt] at (7.6,-13.2) {\includegraphics[width=\paperwidth]{./Graph-Theory-768x481.jpg}};
 \vspace*{3cm}
 \thispagestyle{empty}
 	\begin{center}
@@ -90,10 +90,9 @@
 \pagenumbering{arabic}
 \setcounter{page}{1}
 
-%
-% \section{The Virial Theorem}
-% \input{Virial.tex}
-%
+% \section{MIT 6.042J}
+\input{MIT-6.042J.tex}
+
 % \section{Variable Stars and their Types}
 % \input{variables.tex}
 %
