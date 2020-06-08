@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{textcomp}
+\usepackage{siunitx}
+\usepackage{fancyhdr}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+\usepackage{eso-pic}
+\usepackage{enumerate}
+\usepackage[colorlinks]{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor = blue,
+    pdftitle={Graph Theory and Algorithms}
+}
+\usepackage{lipsum}
+\usepackage{xcolor}
+\usepackage{etoolbox}
+
+\makeatletter
+
+\renewcommand\float@endH{\@endfloatbox\vskip\intextsep
+  \if@flstyle\setbox\@currbox\float@makebox\columnwidth\fi
+  \box\@currbox\vskip\intextsep\relax\@doendpe}
+
+% \patchcmd{\f@nch@head}{\rlap}{\color{white}\rlap}{}{}
+% \patchcmd{\headrule}{\hrule}{\color{white}\hrule}{}{}
+% \patchcmd{\f@nch@foot}{\rlap}{\color{white}\rlap}{}{}
+% \patchcmd{\footrule}{\hrule}{\color{white}\hrule}{}{}
+
+\makeatother
+
+%%% Header and footer
+%%% ------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Summer of Science: Graph Theory}
+\fancyhead[L]{\nouppercase{\leftmark}}
+\cfoot{\thepage}
+
+%%% Macros
+%%% ------------------------------------------
+\newcommand{\theTitle}{Graph Theory and Algorithms}
+\newcommand{\desctotoc}[4]{%
+  \addtocontents{toc}{\medskip\noindent\detokenize{#1}\leavevmode\par\medskip}
+}
+
+
+\begin{document}
+
+
+%%% Titlepage
+%%% ------------------------------------------
+\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt] at (7.6,-13.2){\includegraphics[width=\paperwidth]{Graph-Theory-768x481.jpg}};
+\vspace*{3cm}
+\thispagestyle{empty}
+	\begin{center}
+	\textbf{\Huge{ \theTitle}}\\
+	\textbf{\large{\\ An Introduction to the world of Graphs }}
+	\end{center}
+\vfill
+	\begin{center}
+	\large{\textbf{Devansh Jain,}}\\
+    \large{Indian Institute of Technology, Bombay}
+	\end{center}
+
+\newpage
+
+%%% Table of Contents
+%%% ------------------------------------------
+\pagenumbering{roman}
+\begin{center}
+\hspace{0pt}
+    \tableofcontents
+    \vfill
+\hspace{0pt}
+\end{center}
+
+\newpage
+
+\section{Preface}
+\input{Preface.tex}
+
+\newpage
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+%
+% \section{The Virial Theorem}
+% \input{Virial.tex}
+%
+% \section{Variable Stars and their Types}
+% \input{variables.tex}
+%
+% \section{Equations of State}
+% \input{state.tex}
+%
+% \section{Structure and Evolution of the Sun}
+% \input{Sun.tex}
+%
+% \section{Summary}
+% \input{Conclusion.tex}
+
+\end{document}
