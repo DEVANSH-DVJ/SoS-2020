@@ -21,19 +21,20 @@
 \usepackage{lipsum}
 \usepackage{xcolor}
 \usepackage{etoolbox}
+\usepackage{bookmark}
 
-\makeatletter
+% \makeatletter
 
-\renewcommand\float@endH{\@endfloatbox\vskip\intextsep
-  \if@flstyle\setbox\@currbox\float@makebox\columnwidth\fi
-  \box\@currbox\vskip\intextsep\relax\@doendpe}
+% \renewcommand\float@endH{\@endfloatbox\vskip\intextsep
+%   \if@flstyle\setbox\@currbox\float@makebox\columnwidth\fi
+%   \box\@currbox\vskip\intextsep\relax\@doendpe}
 
 % \patchcmd{\f@nch@head}{\rlap}{\color{white}\rlap}{}{}
 % \patchcmd{\headrule}{\hrule}{\color{white}\hrule}{}{}
 % \patchcmd{\f@nch@foot}{\rlap}{\color{white}\rlap}{}{}
 % \patchcmd{\footrule}{\hrule}{\color{white}\hrule}{}{}
 
-\makeatother
+% \makeatother
 
 %%% Header and footer
 %%% ------------------------------------------
@@ -90,9 +91,16 @@
 \pagenumbering{arabic}
 \setcounter{page}{1}
 
-% \section{MIT 6.042J}
+% \section{MIT 6.006}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=16cm, height=21cm]{"./MIT-6.042J/MIT-6042J-023"}
+% \end{figure}
+
+\section{MIT 6.042J}
 \input{MIT-6.042J.tex}
 
+\section{MIT 6.006}
 \input{MIT-6.006.tex}
 
 % \section{Variable Stars and their Types}
