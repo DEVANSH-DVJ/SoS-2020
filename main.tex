@@ -2,25 +2,24 @@
 \usepackage[utf8]{inputenc}
 \usepackage{xcolor}
 \usepackage[margin=1in]{geometry}
-\usepackage{graphicx}
+% \usepackage{graphicx}
 \usepackage{float}
-\usepackage{textcomp}
-\usepackage{siunitx}
+% \usepackage{textcomp}
+% \usepackage{siunitx}
 \usepackage{fancyhdr}
-\usepackage{amsmath, amssymb, amsthm}
+% \usepackage{amsmath, amssymb, amsthm}
 \usepackage{tikz}
 \usepackage{tikzpagenodes}
-\usepackage{eso-pic}
-\usepackage{enumerate}
+% \usepackage{eso-pic}
+% \usepackage{enumerate}
 \usepackage[colorlinks]{hyperref}
 \hypersetup{
     colorlinks = true,
     linkcolor = blue,
     pdftitle={Graph Theory and Algorithms}
 }
-\usepackage{lipsum}
-\usepackage{xcolor}
-\usepackage{etoolbox}
+% \usepackage{lipsum}
+% \usepackage{etoolbox}
 \usepackage{bookmark}
 
 % \makeatletter
@@ -41,7 +40,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{Summer of Science: Graph Theory}
-\fancyhead[L]{\nouppercase{\leftmark}}
+% \fancyhead[L]{\nouppercase{\leftmark}}
 \cfoot{\thepage}
 
 %%% Macros
@@ -56,7 +55,7 @@
 
 %%% Titlepage
 %%% ------------------------------------------
-\tikz[overlay] \node[opacity=1,inner sep=0pt] at (7.6,-13.2) {\includegraphics[width=\paperwidth]{./Graph-Theory-768x481.jpg}};
+\tikz[overlay] \node[opacity=1,inner sep=0pt] at (7.65,-12.5) {\includegraphics[width=\paperwidth]{./Graph-Theory-768x481.jpg}};
 \vspace*{3cm}
 \thispagestyle{empty}
 	\begin{center}
@@ -65,8 +64,10 @@
 	\end{center}
 \vfill
 	\begin{center}
-	\large{\textbf{Devansh Jain,}}\\
-    \large{Indian Institute of Technology, Bombay}
+	\large{\textbf{Devansh Jain,}\\
+    Indian Institute of Technology, Bombay\\
+    \vspace{0.5cm}
+    (Mentor: Tathagat Verma)\\}
 	\end{center}
 
 \newpage
@@ -83,22 +84,42 @@
 
 \newpage
 
-\section{Preface}
+\section*{Preface}
+\addcontentsline{toc}{section}{Preface}
 \input{Preface.tex}
 
 \newpage
-
-\pagenumbering{arabic}
+\pagenumbering{Roman}
 \setcounter{page}{1}
-
-% \section{MIT 6.006}
+{\color{black} \section*{MIT 6.042J}}
+\addcontentsline{toc}{section}{MIT 6.042J}
+About it
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{23}
+\input{MIT-6.042J.tex}
+% {\color{black} \subsubsection*{Lecture 6: Intro to Graphs}}
+% \addcontentsline{toc}{subsection}{Lecture 6: Intro to Graphs}
 % \begin{figure}[H]
 %     \centering
-%     \includegraphics[width=16cm, height=21cm]{"./MIT-6.042J/MIT-6042J-023"}
+%     \includegraphics[width=16cm, height=20cm]{"./MIT-6.042J/MIT-6042J-023"}
+% \end{figure}
+% \newpage
+% {\color{black} \subsubsection*{Lecture 6: Intro to Graphs}}
+% % \addcontentsline{toc}{subsection}{Lecture 6: Intro to Graphs}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=16cm, height=21cm]{"./MIT-6.042J/MIT-6042J-024"}
+% \end{figure}
+% \newpage
+% {\color{black} \subsubsection*{Lecture 6: Intro to Graphs}}
+% % \addcontentsline{toc}{subsection}{Lecture 6: Intro to Graphs}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=16cm, height=21cm]{"./MIT-6.042J/MIT-6042J-025"}
 % \end{figure}
 
-\section{MIT 6.042J}
-\input{MIT-6.042J.tex}
+\newpage
 
 \section{MIT 6.006}
 \input{MIT-6.006.tex}
