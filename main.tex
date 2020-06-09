@@ -16,11 +16,13 @@
 \hypersetup{
     colorlinks = true,
     linkcolor = blue,
+    urlcolor = blue,
     pdftitle={Graph Theory and Algorithms}
 }
 % \usepackage{lipsum}
 % \usepackage{etoolbox}
 \usepackage{bookmark}
+\usepackage{enumitem}
 
 % \makeatletter
 
@@ -39,9 +41,9 @@
 %%% ------------------------------------------
 \pagestyle{fancy}
 \fancyhf{}
-\rhead{Summer of Science: Graph Theory}
+\rhead{Summer of Science : Graph Theory}
 % \fancyhead[L]{\nouppercase{\leftmark}}
-\cfoot{\thepage}
+% \cfoot{\thepage}
 
 %%% Macros
 %%% ------------------------------------------
@@ -78,20 +80,25 @@
     \tableofcontents
     \vfill
 \hspace{0pt}
+P.S. The page numbers are depicted on the top-left of the image of the hand-written notes\\
 \end{center}
 
 \newpage
 
 \section*{Preface}
 \addcontentsline{toc}{section}{Preface}
+\begin{flushleft}
 \input{Preface.tex}
+\end{flushleft}
 
 \newpage
 \pagenumbering{Roman}
 \setcounter{page}{1}
-{\color{black} \section*{MIT 6.042J}}
-\addcontentsline{toc}{section}{MIT 6.042J}
+{\color{black} \section*{MIT 6.042J/18.062J \small{(Fall 2010) : Mathematics for Computer Science}}}
+\addcontentsline{toc}{section}{MIT 6.042J/18.062J (Fall 2010) : Mathematics for Computer Science}
+\begin{flushleft}
 \input{6.042J-intro.tex}
+\end{flushleft}
 \newpage
 \pagenumbering{arabic}
 \setcounter{page}{23}
@@ -100,9 +107,11 @@
 \newpage
 \pagenumbering{Roman}
 \setcounter{page}{2}
-{\color{black} \section*{MIT 6.006}}
-\addcontentsline{toc}{section}{MIT 6.006}
+{\color{black} \section*{MIT 6.006 \small{(Fall 2011) : Introduction to Algorithms}}}
+\addcontentsline{toc}{section}{MIT 6.006 (Fall 2011) : Introduction to Algorithms}
+\begin{flushleft}
 \input{6.006-intro.tex}
+\end{flushleft}
 \newpage
 \pagenumbering{arabic}
 \setcounter{page}{95}
@@ -111,8 +120,10 @@
 \newpage
 \pagenumbering{Roman}
 \setcounter{page}{3}
-{\color{black} \section*{Further}}
-\addcontentsline{toc}{section}{Further}
-\input{Further.tex}
+{\color{black} \section*{References}}
+\addcontentsline{toc}{section}{References}
+\begin{flushleft}
+\input{References.tex}
+\end{flushleft}
 
 \end{document}
